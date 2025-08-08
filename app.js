@@ -295,33 +295,82 @@ convert an array to object and give id to each array element
 
 
 /*==================================== Question No 28 =========================================
-
+convert each word of string first letter to uppercase()
 ======================================= Answer =====================================*/
-function casing(){let get = document.getElementById('input').value;
-    console.log(get);
-    let convertArray = get.split(' ');
-    console.log(convertArray);
-    let target = convertArray.map((item)=>{return item.charAt(0).toUpperCase();});
-    console.log(target)
-    let otherMap = convertArray.map((item)=>{return item.charAt(0).toUpperCase()+item.slice(1)});
-    console.log(otherMap);
-    let requirement = otherMap.join(' ');
-    console.log(requirement);
-    let display = document.getElementById('display');
-    display.value = requirement;
+// function casing(){let get = document.getElementById('input').value;
+//     console.log(get);
+//     let convertArray = get.split(' ');
+//     console.log(convertArray);
+//     let target = convertArray.map((item)=>{return item.charAt(0).toUpperCase();});
+//     console.log(target)
+//     let otherMap = convertArray.map((item)=>{return item.charAt(0).toUpperCase()+item.slice(1)});
+//     console.log(otherMap);
+//     let requirement = otherMap.join(' ');
+//     console.log(requirement);
+//     let display = document.getElementById('display');
+//     display.value = requirement;
    
+// }
+
+/*==================================== Question No 29 =========================================
+change style by js
+======================================= Answer =====================================*/
+// refresh page function 
+function refreshPage(){location.reload()}
+// underline
+function underlining(){let getInput = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+       let display = document.getElementById('display');
+       display.innerHTML = getInput;
+       display.style.textDecoration = 'underline';
 }
 
+function coloring(){let get = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+     let show = document.getElementById('display');
+     show.innerHTML = get;
+     show.style.fontSize = '50px'
+}
+function bolding(){let get = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+     let show = document.getElementById('display');
+     show.innerHTML = get;
+     show.style.fontWeight = 'bold'}
+    //  upperCase
 
+     function uppercasing(){let get = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+     let show = document.getElementById('display');
+     show.innerHTML = get;
+     show.style.textTransform = 'uppercase'}
+    //  lowercase
 
+     function lowercasing(){let get = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+     let show = document.getElementById('display');
+     show.innerHTML = get;
+     show.style.textTransform = 'lowercase'}
 
-/*==================================== Question No 1 =========================================
+// italicing
+     function italicing(){let get = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+     let show = document.getElementById('display');
+     show.innerHTML = get;
+     show.style.fontStyle = 'italic'}
+// capitalizing
 
-======================================= Answer =====================================*/
-
-
-
-
+     function capitalizing(){let get = document.getElementById('input').value;
+  document.getElementById('input').value = '';
+  document.getElementById('input').focus();
+     let show = document.getElementById('display');
+     show.innerHTML = get;
+     show.style.textTransform = 'capitalize'}
 
 /*==================================== Question No 1 =========================================
 

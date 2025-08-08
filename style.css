@@ -1,4 +1,4 @@
- * {
+ /* * {
       box-sizing: border-box;
       font-family: Arial, sans-serif;
     }
@@ -54,4 +54,114 @@
       textarea, button {
         font-size: 14px;
       }
+    } */
+
+
+
+   /* * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #c3ecff, #f9dfff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      background: #ffffffdd;
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .refresh-center {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .refresh-btn {
+      padding: 10px 20px;
+      background-color: #ff5c5c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .refresh-btn:hover {
+      background-color: #d93030;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+
+    button {
+      flex: 1 1 30%;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #display {
+      min-height: 50px;
+      padding: 12px;
+      text-align: center;
+      font-size: 18px;
+      border-radius: 10px;
+      background-color: #fefefe;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+      color: #333;
+    }
+
+    @media (max-width: 500px) {
+      button {
+        flex: 1 1 45%;
+      }
+
+      .refresh-btn {
+        font-size: 13px;
+        padding: 8px 16px;
+      }
+    } */
