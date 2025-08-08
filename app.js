@@ -315,136 +315,180 @@ convert each word of string first letter to uppercase()
 /*==================================== Question No 29 =========================================
 change style by js
 ======================================= Answer =====================================*/
-// refresh page function 
-function refreshPage(){location.reload()}
-// underline
-function underlining(){let getInput = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-       let display = document.getElementById('display');
-       display.innerHTML = getInput;
-       display.style.textDecoration = 'underline';
+// // refresh page function 
+// function refreshPage(){location.reload()}
+// // underline
+// function underlining(){let getInput = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//        let display = document.getElementById('display');
+//        display.innerHTML = getInput;
+//        display.style.textDecoration = 'underline';
+// }
+
+// function coloring(){let get = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//      let show = document.getElementById('display');
+//      show.innerHTML = get;
+//      show.style.fontSize = '50px'
+// }
+// function bolding(){let get = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//      let show = document.getElementById('display');
+//      show.innerHTML = get;
+//      show.style.fontWeight = 'bold'}
+//     //  upperCase
+
+//      function uppercasing(){let get = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//      let show = document.getElementById('display');
+//      show.innerHTML = get;
+//      show.style.textTransform = 'uppercase'}
+//     //  lowercase
+
+//      function lowercasing(){let get = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//      let show = document.getElementById('display');
+//      show.innerHTML = get;
+//      show.style.textTransform = 'lowercase'}
+
+// // italicing
+//      function italicing(){let get = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//      let show = document.getElementById('display');
+//      show.innerHTML = get;
+//      show.style.fontStyle = 'italic'}
+// // capitalizing
+
+//      function capitalizing(){let get = document.getElementById('input').value;
+//   document.getElementById('input').value = '';
+//   document.getElementById('input').focus();
+//      let show = document.getElementById('display');
+//      show.innerHTML = get;
+//      show.style.textTransform = 'capitalize'}
+
+/*==================================== Question No 30 =========================================
+rest parameter
+======================================= Answer =====================================*/
+// const renderUser = (user1,user2,...rest)=>{console.log(user1),
+//   console.log(user2);
+//   console.log(rest)
+// }
+
+// renderUser('aziz','sndleeb','nik','andy',{username : 'anum',age : 30})
+
+/*==================================== Question No 31 =========================================
+default parameter
+======================================= Answer =====================================*/
+// function calculation(a,b =  4){return a+b;}
+// let ans = calculation(2);
+// console.log(ans)
+/*==================================== Question No 32 =========================================
+ternary operator
+======================================= Answer =====================================*/
+// let age = 18;
+// let condition = (age < 20)?('eligible'):('overage');
+// console.log(condition)
+
+/*==================================== Question No 33 =========================================
+object
+======================================= Answer =====================================*/
+// const student = {name : 'Aziz',
+//   age : 23,
+//   course : 'web'
+// }
+// console.log(student);
+// let chek = student.hasOwnProperty('agee');
+// console.log(chek);
+// delete student.name;
+// console.log(student);
+// student.course = 'Graphic'
+// console.log(student)
+
+/*==================================== Question No 34 =========================================
+onfocus and onblur event
+======================================= Answer =====================================*/
+// function bg(){let getInput = document.getElementById('input');
+//         getInput.style.background = 'red';
+// }
+// function ok(){let getInput = document.getElementById('input');
+//   getInput.style.width = '200px';
+//   getInput.style.height = '200px';
+// }
+
+/*==================================== Question No 35 =========================================
+onmouseout and onmouseover
+======================================= Answer =====================================*/
+// function callMango(){let img = document.getElementById('img');
+//             img.src = "./assets/mango.jpg"
+// }
+// function callApple(){let img = document.getElementById('img');
+//   img.src = "./assets/apple.jpg"
+// }
+
+/*==================================== Question No 36 =========================================
+recursion function
+======================================= Answer =====================================*/
+// function countDown(number){if(number <= 0){console.log('done');
+//   return;
+// }
+// // print number 
+// console.log(number);
+// countDown(number-1)
+// }
+// countDown(5)
+
+/*==================================== Question No 37 =========================================
+find second largest number in an array by for loop
+======================================= Answer =====================================*/
+// let arr = [10, 5, 8, 20, 15];
+// let max = arr[0];
+// for(let i = 0 ; i < arr.length;i++){if(arr[i] > max){max = arr[i]}};
+// console.log(max);
+// let ind = arr.indexOf(max);
+// console.log(ind);
+// arr.splice(ind,1);
+// console.log(arr);
+// let final = arr[0]
+// for(let i = 0;i < arr.length; i++){if(arr[i] > final){final = arr[i]}};
+// console.log(final)
+
+
+/*==================================== Question No 38 =========================================
+
+======================================= Answer =====================================*/
+// let word = "aabbcdde";
+
+// for (let i = 0; i < word.length; i++) {
+//   let times = 0;
+
+//   for (let j = 0; j < word.length; j++) {
+//     if (word[i] === word[j]) {
+//       times = times + 1;
+//     }
+//   }
+
+//   if (times === 1) {
+//     console.log(word[i]);
+//     break;
+//   }
+// }
+
+
+let word = "aabbcdde";
+for(let i = 0; i < word.length;i++){let times = 0;
+  for(let j= 0; j <word.length;j++){if(word[i]=== word[j])
+  {times = times + 1;}
+  }
+  if(times === 1){console.log(word[i]);
+    break;
+  }
 }
-
-function coloring(){let get = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-     let show = document.getElementById('display');
-     show.innerHTML = get;
-     show.style.fontSize = '50px'
-}
-function bolding(){let get = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-     let show = document.getElementById('display');
-     show.innerHTML = get;
-     show.style.fontWeight = 'bold'}
-    //  upperCase
-
-     function uppercasing(){let get = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-     let show = document.getElementById('display');
-     show.innerHTML = get;
-     show.style.textTransform = 'uppercase'}
-    //  lowercase
-
-     function lowercasing(){let get = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-     let show = document.getElementById('display');
-     show.innerHTML = get;
-     show.style.textTransform = 'lowercase'}
-
-// italicing
-     function italicing(){let get = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-     let show = document.getElementById('display');
-     show.innerHTML = get;
-     show.style.fontStyle = 'italic'}
-// capitalizing
-
-     function capitalizing(){let get = document.getElementById('input').value;
-  document.getElementById('input').value = '';
-  document.getElementById('input').focus();
-     let show = document.getElementById('display');
-     show.innerHTML = get;
-     show.style.textTransform = 'capitalize'}
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
 
 
 /*==================================== Question No 1 =========================================
