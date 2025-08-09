@@ -413,23 +413,21 @@ object
 /*==================================== Question No 34 =========================================
 onfocus and onblur event
 ======================================= Answer =====================================*/
-// function bg(){let getInput = document.getElementById('input');
-//         getInput.style.background = 'red';
-// }
-// function ok(){let getInput = document.getElementById('input');
-//   getInput.style.width = '200px';
-//   getInput.style.height = '200px';
-// }
+ function bg(){let getInput = document.getElementById('input');
+         getInput.style.background = 'red';
+ }
+ function ok(){let getInput = document.getElementById('input');
+   getInput.style.width = '200px';
+   getInput.style.height = '200px';
+ }
 
 /*==================================== Question No 35 =========================================
 onmouseout and onmouseover
 ======================================= Answer =====================================*/
-// function callMango(){let img = document.getElementById('img');
-//             img.src = "./assets/mango.jpg"
-// }
-// function callApple(){let img = document.getElementById('img');
-//   img.src = "./assets/apple.jpg"
-// }
+ function callMango(){let img = document.getElementById('img');
+             img.src = "./assets/mango.jpg"
+} function callApple(){let img = document.getElementById('img');   img.src = "./assets/apple.jpg"
+ }
 
 /*==================================== Question No 36 =========================================
 recursion function
@@ -460,209 +458,206 @@ find second largest number in an array by for loop
 
 
 /*==================================== Question No 38 =========================================
-
+find first not repeated character
 ======================================= Answer =====================================*/
+
 // let word = "aabbcdde";
-
-// for (let i = 0; i < word.length; i++) {
-//   let times = 0;
-
-//   for (let j = 0; j < word.length; j++) {
-//     if (word[i] === word[j]) {
-//       times = times + 1;
-//     }
+// for(let i = 0; i < word.length;i++){let times = 0;
+//   for(let j= 0; j <word.length;j++){if(word[i]=== word[j])
+//   {times = times + 1;}
 //   }
-
-//   if (times === 1) {
-//     console.log(word[i]);
+//   if(times === 1){console.log(word[i]);
 //     break;
 //   }
 // }
 
 
+/*==================================== Question No 39 =========================================
+find first not repeated letter
+======================================= Answer =====================================*/
 let word = "aabbcdde";
-for(let i = 0; i < word.length;i++){let times = 0;
-  for(let j= 0; j <word.length;j++){if(word[i]=== word[j])
-  {times = times + 1;}
-  }
-  if(times === 1){console.log(word[i]);
-    break;
-  }
+
+for(let i = 0; i <word.length;i++){let time = 0;
+  for(let j = 0 ; j < word.length;j++){if(word[i]=== word[j]
+   
+  )
+{time = time + 1;}}
+if(time === 1){console.log(word[i]);
+  break;
+}
 }
 
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 40 =========================================
+some()
+======================================= Answer =====================================*/
+// const obj = [
+//   {id : 1,
+//   name : 'Aziz',
+//   designation : 'Teacher'
+// },
+//  {id : 2,
+//   name : 'Kashif',
+//   designation : 'web developer'
+// },
+//  {id : 3,
+//   name : 'Umer',
+//   designation : 'Graphic designer'
+// },
+//  {id : 4,
+//   name : 'Pervaiz',
+//   designation : 'web developer'
+// }
+// ];
+// console.log(obj )
 
+// let need = obj.some((item)=>{return item.designation === 'web developer'});
+// console.log(need)
+
+
+/*==================================== Question No 41 =========================================
+find()
+======================================= Answer =====================================*/
+// const obj = [
+//   {id : 1,
+//   name : 'Aziz',
+//   designation : 'Teacher'
+// },
+//  {id : 2,
+//   name : 'Kashif',
+//   designation : 'web developer'
+// },
+//  {id : 3,
+//   name : 'Umer',
+//   designation : 'Graphic designer'
+// },
+//  {id : 4,
+//   name : 'Pervaiz',
+//   designation : 'web developer'
+// }
+// ];
+// console.log(obj )
+
+// let need = obj.find((item)=>{return item.designation === 'web developer'});
+// console.log(need)
+
+/*==================================== Question No 42 =========================================
+filter()
+======================================= Answer =====================================*/
+// const obj = [
+//   {id : 1,
+//   name : 'Aziz',
+//   designation : 'Teacher'
+// },
+//  {id : 2,
+//   name : 'Kashif',
+//   designation : 'web developer'
+// },
+//  {id : 3,
+//   name : 'Umer',
+//   designation : 'Graphic designer'
+// },
+//  {id : 4,
+//   name : 'Pervaiz',
+//   designation : 'web developer'
+// }
+// ];
+// console.log(obj )
+
+// let need = obj.filter((item)=>{return item.designation === 'web developer'});
+// console.log(need)
+
+/*==================================== Question No 43 =========================================
+findIndex()
 ======================================= Answer =====================================*/
 
+// const obj = [
+//   {id : 1,
+//   name : 'Aziz',
+//   designation : 'Teacher'
+// },
+//  {id : 2,
+//   name : 'Kashif',
+//   designation : 'web developer'
+// },
+//  {id : 3,
+//   name : 'Umer',
+//   designation : 'Graphic designer'
+// },
+//  {id : 4,
+//   name : 'Pervaiz',
+//   designation : 'web developer'
+// }
+// ];
+// console.log(obj )
+
+// let need = obj.findIndex((item)=>{return item.name === 'Kashif'});
+// console.log(need);
+// obj.splice(need,1);
+// console.log(obj);
+// // let copy = obj.slice(0,2);
+// // let copy = {...obj}
+// let copy = JSON.parse(JSON.stringify(obj))
+// console.log(copy)
 
 
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 44 =========================================
+forEach()
 ======================================= Answer =====================================*/
+// let fruit = ['apple','banana','guava','orange'];
+//  fruit.forEach((item)=>{console.log(item)});
 
-
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 45 =========================================
+split()
 ======================================= Answer =====================================*/
-
-/*==================================== Question No 1 =========================================
-
+// let str = 'hello i love learning';
+// let array = str.split(' ').length;
+// console.log(array)
+/*==================================== Question No 46 =========================================
+join()
 ======================================= Answer =====================================*/
+// let array = [ 'i','am','going' , 'to','school'];
+// let str = array.join(' ');
+// console.log(str)
 
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 47 =========================================
+starWith()
 ======================================= Answer =====================================*/
+// let fruits = ['banana','grapes','apple','gava'];
+// let need = fruits.filter((item)=>{return item.startsWith('g')});
+// console.log(need)
 
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 48 =========================================
+try catch
 ======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
+// try{let num1 = prompt('enter number 1');
+//   let num2 = prompt('enter number 2');
+//   let ans = num1/num2;
+//   if(num2 === '0'){throw 'can not divide by zero'}
+//   console.log(ans)
+// }
+// catch(err){console.log('error: ',err)}
+            
+/*==================================== Question No 49 =========================================
+try catch
 ======================================= Answer =====================================*/
+// try{let age = prompt('enter age');
+//   let education = prompt('enter eduction matric/inter');
+//   if(age < 18){throw 'you are children'}
+//  else if (education !== 'matric'){throw 'your education is less'}
+//   console.log('you are eligible')
+// }
+// catch(err){console.log('err : ' ,err)}
 
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 50 =========================================
+try catch
 ======================================= Answer =====================================*/
+// try{let num = 5;
+//   console.log(num.toUpperCase())
+// }
+// catch(error){console.log(error.message)}
+// console.log('programm is running')
 
 
 
 
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
